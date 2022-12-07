@@ -13,15 +13,21 @@ public class Student_challenge1 {
 
         Scanner k = new Scanner(System.in);
         rmnLtr = k.nextLine();//gets the roman letters
+        k.close();
 
         size = rmnLtr.length();
+        rmnInpt = new String[size];
         for (int x = 0; x < size + 1; x++) {
-           
+            
             if(y<=size){//attempt to split the each roman letters individually
                 l = rmnLtr.substring(x, y);
-                System.out.println(l);
+                rmnInpt[x] = l;   
                 y++;
             }
+        }
+
+        for(int u = 0; u<=size-1;u++){
+            System.out.println(rmnLtr.charAt(u));
         }
 
     }
