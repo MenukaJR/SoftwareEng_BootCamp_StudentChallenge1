@@ -21,14 +21,21 @@ public class Student_challenge1 {
             
             if(y<=size){//attempt to split the each roman letters individually
                 l = rmnLtr.substring(x, y);
-                rmnInpt[x] = l;   
+                rmnInpt[x] = l;  //adding roman letters to another array 
                 y++;
+
+                for(int p = 0;p<=letters.length;p++){
+                    
+                }
             }
         }
+
+    
 
         for(int u = 0; u<=size-1;u++){
             System.out.println(rmnLtr.charAt(u));
         }
+
 
     }
 }
